@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Quiz</title>
+        <style>
+            input[type=text] {
+                background-color: chartreuse;
+            }
+        </style>
+    </head>
+    <body>
+    <div style="background-color: orchid;">
+        <form>
+            <h3>How well you know about Me!</h3>
+            <div>
+                <b>Name: </b>
+                <input name = "name" type = "text" placeholder="Enter Name">
+                <b>MailID: </b>
+                <input name = "Mail id" type="text" placeholder="Enter Mail ID">
+            </div>
+        </br>
+            <div>
+                <b>Where am I from</b>
+                <input name="state" list="state" placeholder="state">
+                <datalist id="countries">
+                    <option value = "Telangana">
+                    <option value = "Amaravati">
+                </datalist>
+            </div>
+        </br>
+            <div>
+                <b>My favorite color</b>
+                <input name="color" type="radio" value="black"> Black
+                <input name="color" type="radio" value="white"> White
+                <input name="color" type="radio" value="blue"> Blue
+                <input name="color" type="radio" value="orange"> orange
+                <input name="color" type="radio" value="maroon"> Maroon
+            </div>
+        </form>
+        </div>
+    </body>
+</html>
