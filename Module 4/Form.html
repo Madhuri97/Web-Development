@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Quiz</title>
+        <title>Login Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <style>
             input[type=text] {
                 background-color: chartreuse;
@@ -9,34 +12,32 @@
         </style>
     </head>
     <body>
-    <div style="background-color: orchid;">
-        <form>
-            <h3>How well you know about Me!</h3>
-            <div>
-                <b>Name: </b>
-                <input name = "name" type = "text" placeholder="Enter Name">
-                <b>MailID: </b>
-                <input name = "Mail id" type="text" placeholder="Enter Mail ID">
-            </div>
-        </br>
-            <div>
-                <b>Where am I from</b>
-                <input name="state" list="state" placeholder="state">
-                <datalist id="countries">
-                    <option value = "Telangana">
-                    <option value = "Amaravati">
-                </datalist>
-            </div>
-        </br>
-            <div>
-                <b>My favorite color</b>
-                <input name="color" type="radio" value="black"> Black
-                <input name="color" type="radio" value="white"> White
-                <input name="color" type="radio" value="blue"> Blue
-                <input name="color" type="radio" value="orange"> orange
-                <input name="color" type="radio" value="maroon"> Maroon
-            </div>
-        </form>
+        <div class="container">
+            <h3>Login to Know more</h3>
+            <form action="/action_page.php">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+                  </div>
+              </br>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+            </br>
+                <div class="form-group">
+                  <label for="pwd">Password:</label>
+                  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                </div>
+            </br>
+                <div class="form-group form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                  </label>
+                </div>
+            </br>
+                <button type="submit" class="btn btn-primary">Take Quiz</button>
+              </form>    
         </div>
     </body>
 </html>
