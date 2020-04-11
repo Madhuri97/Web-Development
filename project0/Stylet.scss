@@ -1,3 +1,4 @@
+// sass variables
 $fontf: Arial;
 $fonts: 18px;
 
@@ -6,3 +7,17 @@ body {
     font-family: $fontf;
     font-size: $fonts;
   }
+
+// nested sass
+div{
+
+  //inheritance
+  p {
+  font-family: $fontf;
+  }
+  h1{
+    @extend p;
+    font-style: normal;
+    text-align: center;
+  } 
+}
